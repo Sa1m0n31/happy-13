@@ -141,7 +141,10 @@ add_action( 'widgets_init', 'happy_13_widgets_init' );
  */
 function happy_13_scripts() {
 	wp_enqueue_style( 'happy-13-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'happy-13-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'mobile-style', get_stylesheet_directory_uri() . '/mobile.css', array(), _S_VERSION );
+
+	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js', array('siema-js'), 1.0, true);
+	wp_enqueue_script('siema-js', get_stylesheet_directory_uri() . '/js/siema.js', array(), 1.0, true);
 
 	wp_enqueue_script( 'happy-13-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

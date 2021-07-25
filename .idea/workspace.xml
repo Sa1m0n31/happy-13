@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25dc5397-46a5-488d-bfbb-ba93055a4bc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/header-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/abacus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-pentagon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/biurowe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/blog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/calculator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/dla-dzieci.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/elektronika.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/example.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/famous.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/gifty-do-paczek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/happy13-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/happy13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/katalog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/konsultacja.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/kosmetyki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/kubki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mapa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/o-nas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/odziez.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/opakowania-eko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/opinie-bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/opinie-bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/premium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/proces_zamowienia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/process-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/process-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/quotes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/realizacja-i-wysylka.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/slodycze-i-napoje.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tasmy-foliopaki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/user_square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/wave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/worki-torby.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/wycena-gadzetow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/znakowanie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/siema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page-katalogi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/customizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$USER_HOME$/Downloads/wordpress-5.6 (1)" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1vl697c9DdvX0Um77t7xB8eHA5w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\happy-13\img" />
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\happy-13" />
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\happy-13\js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25dc5397-46a5-488d-bfbb-ba93055a4bc4" name="Default Changelist" comment="" />
+      <created>1627124173537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627124173537</updated>
+      <workItem from="1627124176225" duration="12917000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
