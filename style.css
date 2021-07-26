@@ -549,14 +549,6 @@ a, button, .button {
     z-index: 3;
 }
 
-.offer__content::before {
-    content: url("./img/bg-2.png");
-    position: absolute;
-    bottom: -40px;
-    left: -50px;
-    z-index: -1;
-}
-
 .offer__item {
     position: relative;
     height: 320px;
@@ -718,7 +710,7 @@ a, button, .button {
 .testimonials__arrow {
     background: transparent;
     z-index: 2;
-    margin: 0 20px;
+    margin: 0 0 0 10px;
 }
 
 .testimonials__arrow--right .testimonials__arrow__img {
@@ -775,7 +767,7 @@ a, button, .button {
     align-items: center;
 }
 
-.row .contact__label:not(:last-child) {
+.row .contact__label:not(:last-of-type) {
     margin-right: 15px;
 }
 

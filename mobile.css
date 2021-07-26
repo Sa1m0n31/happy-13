@@ -8,10 +8,6 @@
         left: 5vw;
     }
 
-    .landingPage {
-        padding-top: 20px;
-    }
-
     /* Process */
     .process::before {
         left: -300px;

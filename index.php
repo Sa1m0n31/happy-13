@@ -33,16 +33,16 @@ get_header();
     <!-- ABOUT US -->
     <section class="aboutUs section" id="o-nas">
         <main class="aboutUs__content">
-            <h2 class="aboutUs__header">
+            <h2 class="aboutUs__header" data-aos="fade-up">
                 Kim jesteśmy?
             </h2>
-            <h3 class="aboutUs__subheader">
+            <h3 class="aboutUs__subheader" data-aos="fade-up">
                 Poznaj Happy13
             </h3>
-            <p class="aboutUs__text">
+            <p class="aboutUs__text" data-aos="fade-up">
                 Agencja reklamowa, działająca na terenie całej polski a także poza jej granicami, Łączymy markę z personalizowanymi materiałami promocyjnymi w zależności od potrzeb. Nieszablonowe podejście i profesjonalizm sprawiają, że z naszej pracowni wychodzą wspaniałe projekty. Stworzymy dla Ciebie całą identyfikację reklamową. U nas załatwisz za jednym mailem: gadżety, banery, odzież firmową, opakowania, taśmy, czy słodycze z logo! Wypuścisz swoją markę odzieżową, lub staniesz się producentem kosmetyków. Dopilnujemy każdej kwestii, od projektu poprzez produkcję, aż po wysyłkę!
             </p>
-            <a class="button button--aboutUs">
+            <a class="button button--aboutUs" data-aos="fade-up" href="<?php echo get_page_link(get_page_by_title('O nas')->ID); ?>">
                 Dowiedz się więcej
             </a>
         </main>
@@ -50,11 +50,11 @@ get_header();
 
     <!-- CO NAS WYROZNIA -->
     <section class="strengths section">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Co nas wyróżnia?
         </h2>
         <main class="strengths__content">
-            <section class="strengths__item">
+            <section class="strengths__item" data-aos="zoom-in-up">
                 <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-1.svg'; ?>" alt="icon" />
                 <h3 class="strengths__item__header">
                     Indywidualna wycena
@@ -64,7 +64,7 @@ get_header();
                 </p>
             </section>
 
-            <section class="strengths__item">
+            <section class="strengths__item" data-aos="zoom-in-up">
                 <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-2.svg'; ?>" alt="icon" />
                 <h3 class="strengths__item__header">
                     Indywidualna wycena
@@ -74,8 +74,8 @@ get_header();
                 </p>
             </section>
 
-            <section class="strengths__item">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-3.svg'; ?>" alt="icon" />
+            <section class="strengths__item" data-aos="zoom-in-up">
+                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-1.svg'; ?>" alt="icon" />
                 <h3 class="strengths__item__header">
                     Indywidualna wycena
                 </h3>
@@ -84,8 +84,8 @@ get_header();
                 </p>
             </section>
 
-            <section class="strengths__item">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-4.svg'; ?>" alt="icon" />
+            <section class="strengths__item" data-aos="zoom-in-up">
+                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-2.svg'; ?>" alt="icon" />
                 <h3 class="strengths__item__header">
                     Indywidualna wycena
                 </h3>
@@ -98,10 +98,10 @@ get_header();
 
     <!-- PROCESS -->
     <section class="process section">
-        <h2 class="sectionHeader process__bigHeader">
+        <h2 class="sectionHeader process__bigHeader" data-aos="fade-up">
             Proces zamówienia
         </h2>
-        <div class="process__row process__row--first">
+        <div class="process__row process__row--first" data-aos="fade-up">
             <section class="process__item">
                 <h2 class="process__number">
                     01
@@ -115,11 +115,11 @@ get_header();
                     </p>
                 </main>
             </section>
-            <section class="process__item process__item--second">
+            <section class="process__item process__item--second" data-aos="fade-up">
                 <h2 class="process__number">
                     02
                 </h2>
-                <main class="process__item__content">
+                <main class="process__item__content" data-aos="fade-up">
                     <h3 class="process__header">
                         Wycena gadżetów
                     </h3>
@@ -131,9 +131,9 @@ get_header();
         </div>
 
         <div class="process__row process__row--second">
-            <img class="process__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/proces_zamowienia.png'; ?>" alt="proces-zamowienia" />
+            <img class="process__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/proces_zamowienia.png'; ?>" alt="proces-zamowienia" data-aos="fade-up" />
 
-            <section class="process__item process__item--third">
+            <section class="process__item process__item--third" data-aos="fade-up">
                 <h2 class="process__number">
                     03
                 </h2>
@@ -151,12 +151,12 @@ get_header();
 
     <!-- OFFER -->
     <section class="offer section" id="produkty">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Sprawdź, co możemy dla Ciebie zrobić
         </h2>
 
         <main class="offer__content">
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -167,7 +167,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -178,7 +178,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -189,7 +189,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -200,7 +200,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -211,7 +211,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -222,7 +222,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -233,7 +233,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -244,7 +244,7 @@ get_header();
                     </a>
                 </div>
             </div>
-            <div class="offer__item">
+            <div class="offer__item" data-aos="flip-left">
                 <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
                 <div class="offer__item__content">
                     <h3 class="offer__item__header">
@@ -259,16 +259,16 @@ get_header();
     </section>
 
     <section class="testimonials section">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Opinie klientów
         </h2>
 
         <div class="testimonials__carouselWrapper">
-            <button class="testimonials__arrow testimonials__arrow--left" onclick="testimonialsPrev()">
+            <button class="testimonials__arrow testimonials__arrow--left" onclick="testimonialsPrev()" data-aos="fade-up">
                 <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="lewo" />
             </button>
 
-            <div class="testimonials__carousel">
+            <div class="testimonials__carousel" data-aos="fade-up">
                 <div class="testimonials__item">
                     <p class="testimonials__item__text">
                         Generalnie miałem do czynienia z wieloma tego typu firmami ale po kontakcie z tą nie zamierzam już szukać dalej. Bardzo profesjonalna obsługa klienta i dobre ceny oraz co najważniejsze terminowość. Jak najbardziej polecam!
@@ -306,7 +306,7 @@ get_header();
                 </div>
             </div>
 
-            <button class="testimonials__arrow testimonials__arrow--right" onclick="testimonialsNext()">
+            <button class="testimonials__arrow testimonials__arrow--right" onclick="testimonialsNext()" data-aos="fade-up">
                 <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="prawo" />
             </button>
         </div>
@@ -314,15 +314,15 @@ get_header();
     </section>
 
     <section class="contact section">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Szybka wycena
         </h2>
 
         <main class="contact__content">
             <section class="contact__section">
-                <img class="contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="mapa" />
+                <img class="contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="logo" data-aos="fade-up" />
 
-                <section class="contact__address">
+                <section class="contact__address" data-aos="fade-up">
 
                     Agencja Happy 13<br/>
                     Ul. Gazownicza 5/1<br/>
@@ -336,7 +336,7 @@ get_header();
                 </section>
             </section>
 
-            <section class="contact__form">
+            <section class="contact__form" data-aos="fade-up">
                 <h3 class="contact__form__afterSubmit">
                     Twój formularz został wysłany! Skontaktujemy się z Tobą najszybciej jak to możliwe!
                 </h3>
@@ -344,16 +344,16 @@ get_header();
             </section>
         </main>
 
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d382.6017647738653!2d19.047233673478715!3d49.82690499545902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a11aec1666e7%3A0xce5b706bb97ca3b4!2sAgencja%20reklamowa%20Happy%2013!5e0!3m2!1spl!2spl!4v1627135605007!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe data-aos="fade-up" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d382.6017647738653!2d19.047233673478715!3d49.82690499545902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a11aec1666e7%3A0xce5b706bb97ca3b4!2sAgencja%20reklamowa%20Happy%2013!5e0!3m2!1spl!2spl!4v1627135605007!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section class="blogSection section" id="blog">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Potrzebujesz inspiracji?<br/>
             Sprawdź naszego <span class="orange">bloga</span> z ciekawymi pomysłami!
         </h2>
 
-        <div class="blogSection__content">
+        <div class="blogSection__content" data-aos="zoom-in-up">
             <?php
 
                 $args = array(
@@ -387,24 +387,24 @@ get_header();
         </div>
     </section>
     <section class="section section--socialMedia">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Zobacz, co robimy
         </h2>
-        <h3 class="sectionSubheader">
+        <h3 class="sectionSubheader" data-aos="fade-up">
             Sprawdź nasze <b><span class="orange">social media</span></b>
         </h3>
-        <main class="instagramFeed">
+        <main class="instagramFeed" data-aos="fade-up">
             <?php echo do_shortcode('[instagram-feed]'); ?>
         </main>
     </section>
 
     <section class="section section--catalog">
         <main class="catalog__main">
-            <figure class="catalog__imgWrapper">
+            <figure class="catalog__imgWrapper" data-aos="fade-left">
                 <img class="catalog__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/katalog.png'; ?>" alt="katalog" />
             </figure>
 
-            <div class="catalog__content">
+            <div class="catalog__content" data-aos="fade-right">
                 <h3 class="catalog__header">
                     Katalog stockowych produktów
                 </h3>
@@ -423,17 +423,17 @@ get_header();
 
     <!-- ZNAKOWANIE -->
     <section class="section section--znakowanie">
-        <h2 class="sectionHeader">
+        <h2 class="sectionHeader" data-aos="fade-up">
             Znakowanie
         </h2>
 
-        <img class="znakowanie__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/znakowanie.png'; ?>" alt="znakowanie" />
+        <img data-aos="fade-up" class="znakowanie__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/znakowanie.png'; ?>" alt="znakowanie" />
 
-        <p class="znakowanie__text">
+        <p class="znakowanie__text" data-aos="fade-up">
             Wybrany przez Państwa gadżet to połowa sukcesu - dopełnieniem jest znakowanie. Gadżety reklamowe to żywa wizytówka firmy. Dbamy o to aby znakowanie na produkcie było estetyczne i perfekcyjne, a same gadżety były spójne z wizerunkiem firmy. Zapoznaj się z technikami znakowania.
         </p>
 
-        <a class="button button--znakowanie" href="<?php echo get_page_link(get_page_by_title('Znakowanie')->ID); ?>">
+        <a data-aos="fade-up" class="button button--znakowanie" href="<?php echo get_page_link(get_page_by_title('Znakowanie')->ID); ?>">
             Czytaj więcej
         </a>
     </section>

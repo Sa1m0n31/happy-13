@@ -68,3 +68,6 @@ document.addEventListener("wpcf7mailfailed", () => {
 document.addEventListener("wpcf7mailspam", () => {
     formSubmit();
 });
+
+/* AOS animations */
+AOS.init();
