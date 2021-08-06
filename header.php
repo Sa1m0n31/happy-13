@@ -23,9 +23,29 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="container">
+    <!-- BEFORE LOAD -->
+    <aside class="beforeLoad">
+        <img class="beforeLoad__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="happy-13-logo" />
+    </aside>
+
     <!-- LANDING PAGE -->
     <section class="landingPage">
-        <img class="landingPage__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
+        <img class="landingPage__img" onload='
+        console.log("hi!");
+        const beforeLoad = document.querySelector(".beforeLoad");
+        const landingPage = document.querySelector(".landingPage");
+        const landingPageChildren = document.querySelectorAll(".landingPage *");
+
+        beforeLoad.style.opacity = "0";
+        landingPage.style.opacity = "1";
+        landingPageChildren.forEach(item => {
+        item.style.opacity = "1";
+        });
+
+        setTimeout(() => {
+        beforeLoad.style.display = "none";
+        }, 1000);
+' src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
         <header class="siteHeader">
             <a href="<?php echo get_home_url(); ?>">
                 <img class="siteHeader__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="happy-13-logo" />

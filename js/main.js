@@ -70,4 +70,22 @@ document.addEventListener("wpcf7mailspam", () => {
 });
 
 /* AOS animations */
-AOS.init();
+AOS.init({
+    offset: -200
+});
+
+const landingPageImgLoaded = () => {
+    const beforeLoad = document.querySelector(".beforeLoad");
+    const landingPage = document.querySelector(".landingPage");
+    const landingPageChildren = document.querySelectorAll(".landingPage *");
+
+    beforeLoad.style.opacity = "0";
+    landingPage.style.opacity = "1";
+    landingPageChildren.forEach(item => {
+        item.style.opacity = "1";
+    });
+
+    setTimeout(() => {
+        beforeLoad.style.display = "none";
+    }, 1000);
+}

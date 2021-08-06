@@ -99,7 +99,7 @@ get_header();
     <!-- PROCESS -->
     <section class="process section">
         <h2 class="sectionHeader process__bigHeader" data-aos="fade-up">
-            Proces zamówienia
+            Proces realizacji
         </h2>
         <div class="process__row process__row--first" data-aos="fade-up">
             <section class="process__item">
@@ -258,146 +258,7 @@ get_header();
         </main>
     </section>
 
-    <section class="testimonials section">
-        <h2 class="sectionHeader" data-aos="fade-up">
-            Opinie klientów
-        </h2>
-
-        <div class="testimonials__carouselWrapper">
-            <button class="testimonials__arrow testimonials__arrow--left" onclick="testimonialsPrev()" data-aos="fade-up">
-                <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="lewo" />
-            </button>
-
-            <div class="testimonials__carousel" data-aos="fade-up">
-                <div class="testimonials__item">
-                    <p class="testimonials__item__text">
-                        Generalnie miałem do czynienia z wieloma tego typu firmami ale po kontakcie z tą nie zamierzam już szukać dalej. Bardzo profesjonalna obsługa klienta i dobre ceny oraz co najważniejsze terminowość. Jak najbardziej polecam!
-                    </p>
-                    <span class="testimonials__item__author">
-                    Autor opinii, firma
-                </span>
-                </div>
-
-                <div class="testimonials__item">
-                    <p class="testimonials__item__text">
-                        Generalnie miałem do czynienia z wieloma tego typu firmami ale po kontakcie z tą nie zamierzam już szukać dalej. Bardzo profesjonalna obsługa klienta i dobre ceny oraz co najważniejsze terminowość. Jak najbardziej polecam!
-                    </p>
-                    <span class="testimonials__item__author">
-                    Autor opinii, firma
-                </span>
-                </div>
-
-                <div class="testimonials__item">
-                    <p class="testimonials__item__text">
-                        Generalnie miałem do czynienia z wieloma tego typu firmami ale po kontakcie z tą nie zamierzam już szukać dalej. Bardzo profesjonalna obsługa klienta i dobre ceny oraz co najważniejsze terminowość. Jak najbardziej polecam!
-                    </p>
-                    <span class="testimonials__item__author">
-                    Autor opinii, firma
-                </span>
-                </div>
-
-                <div class="testimonials__item">
-                    <p class="testimonials__item__text">
-                        Generalnie miałem do czynienia z wieloma tego typu firmami ale po kontakcie z tą nie zamierzam już szukać dalej. Bardzo profesjonalna obsługa klienta i dobre ceny oraz co najważniejsze terminowość. Jak najbardziej polecam!
-                    </p>
-                    <span class="testimonials__item__author">
-                    Autor opinii, firma
-                </span>
-                </div>
-            </div>
-
-            <button class="testimonials__arrow testimonials__arrow--right" onclick="testimonialsNext()" data-aos="fade-up">
-                <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="prawo" />
-            </button>
-        </div>
-
-    </section>
-
-    <section class="contact section">
-        <h2 class="sectionHeader" data-aos="fade-up">
-            Szybka wycena
-        </h2>
-
-        <main class="contact__content">
-            <section class="contact__section">
-                <img class="contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="logo" data-aos="fade-up" />
-
-                <section class="contact__address" data-aos="fade-up">
-
-                    Agencja Happy 13<br/>
-                    Ul. Gazownicza 5/1<br/>
-                    43-300 Bielsko-Biała<br/>
-                    <br/>
-                    Godziny otwarcia:<br/>
-                    Pon-Pt 8:00-16:00<br/>
-                    <br/>
-                    <b>Tel:</b> 516 932 613<br/>
-                    <b>Email:</b> biuro@happy13.com.pl<br/>
-                </section>
-            </section>
-
-            <section class="contact__form" data-aos="fade-up">
-                <h3 class="contact__form__afterSubmit">
-                    Twój formularz został wysłany! Skontaktujemy się z Tobą najszybciej jak to możliwe!
-                </h3>
-                <?php echo do_shortcode('[contact-form-7 id="138" title="Formularz 1"]'); ?>
-            </section>
-        </main>
-
-        <iframe data-aos="fade-up" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d382.6017647738653!2d19.047233673478715!3d49.82690499545902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a11aec1666e7%3A0xce5b706bb97ca3b4!2sAgencja%20reklamowa%20Happy%2013!5e0!3m2!1spl!2spl!4v1627135605007!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <section class="blogSection section" id="blog">
-        <h2 class="sectionHeader" data-aos="fade-up">
-            Potrzebujesz inspiracji?<br/>
-            Sprawdź naszego <span class="orange">bloga</span> z ciekawymi pomysłami!
-        </h2>
-
-        <div class="blogSection__content" data-aos="zoom-in-up">
-            <?php
-
-                $args = array(
-                        'posts_per_page' => 4
-                );
-
-                $query = new WP_Query($args);
-                if($query->have_posts()) {
-                    while($query->have_posts()) {
-                        $query->the_post();
-                        $feat_image = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
-                        ?>
-                        <a class="blogSection__item" href="<?php echo the_permalink(); ?>">
-                            <div class="blogSection__item__imgWrapper">
-                                <img class="blogSection__item__img" src="<?php  echo $feat_image; ?>" alt="blog" />
-                            </div>
-                            <h3 class="blogSection__item__title">
-                                <?php echo the_title(); ?>
-                            </h3>
-                            <p class="blogSection__item__excerpt">
-                                <?php echo the_excerpt(); ?>
-                            </p>
-                        </a>
-
-                            <?php
-                    }
-                    wp_reset_postdata();
-                }
-
-            ?>
-        </div>
-    </section>
-    <section class="section section--socialMedia">
-        <h2 class="sectionHeader" data-aos="fade-up">
-            Zobacz, co robimy
-        </h2>
-        <h3 class="sectionSubheader" data-aos="fade-up">
-            Sprawdź nasze <b><span class="orange">social media</span></b>
-        </h3>
-        <main class="instagramFeed" data-aos="fade-up">
-            <?php echo do_shortcode('[instagram-feed]'); ?>
-        </main>
-    </section>
-
+    <!-- KATALOG -->
     <section class="section section--catalog">
         <main class="catalog__main">
             <figure class="catalog__imgWrapper" data-aos="fade-left">
@@ -436,6 +297,137 @@ get_header();
         <a data-aos="fade-up" class="button button--znakowanie" href="<?php echo get_page_link(get_page_by_title('Znakowanie')->ID); ?>">
             Czytaj więcej
         </a>
+    </section>
+
+    <!-- OPINIE -->
+    <section class="testimonials section">
+        <h2 class="sectionHeader" data-aos="fade-up">
+            Opinie klientów
+        </h2>
+
+        <div class="testimonials__carouselWrapper">
+            <button class="testimonials__arrow testimonials__arrow--left" onclick="testimonialsPrev()" data-aos="fade-up">
+                <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="lewo" />
+            </button>
+
+            <div class="testimonials__carousel" data-aos="fade-up">
+                <?php
+                    $args = array(
+                            'post_type' => 'testimonials'
+                    );
+
+                    $query = new WP_Query($args);
+
+                    if($query->have_posts()) {
+                        while($query->have_posts()) {
+                            $query->the_post();
+                            ?>
+                            <div class="testimonials__item">
+                                <p class="testimonials__item__text">
+                                    <?php echo get_field('tresc_opinii'); ?>
+                                </p>
+                                <span class="testimonials__item__author">
+                                    <?php echo get_field('autor_opinii'); ?>
+                                </span>
+                            </div>
+
+                                <?php
+                        }
+                    }
+                ?>
+        </div>
+            <button class="testimonials__arrow testimonials__arrow--right" onclick="testimonialsNext()" data-aos="fade-up">
+                <img class="testimonials__arrow__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/arrow.svg'; ?>" alt="prawo" />
+            </button>
+    </section>
+
+    <!-- ZOBACZ CO ROBIMY -->
+    <section class="section section--socialMedia">
+        <h2 class="sectionHeader" data-aos="fade-up">
+            Zobacz, co robimy
+        </h2>
+        <h3 class="sectionSubheader" data-aos="fade-up">
+            Sprawdź nasze <b><span class="orange">social media</span></b>
+        </h3>
+        <main class="instagramFeed" data-aos="fade-up">
+            <?php echo do_shortcode('[instagram-feed]'); ?>
+        </main>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blogSection section" id="blog">
+        <h2 class="sectionHeader" data-aos="fade-up">
+            Potrzebujesz inspiracji?<br/>
+            Sprawdź naszego <span class="orange">bloga</span> z ciekawymi pomysłami!
+        </h2>
+
+        <div class="blogSection__content" data-aos="zoom-in-up">
+            <?php
+
+            $args = array(
+                'posts_per_page' => 4
+            );
+
+            $query = new WP_Query($args);
+            if($query->have_posts()) {
+                while($query->have_posts()) {
+                    $query->the_post();
+                    $feat_image = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) );
+                    ?>
+                    <a class="blogSection__item" href="<?php echo the_permalink(); ?>">
+                        <div class="blogSection__item__imgWrapper">
+                            <img class="blogSection__item__img" src="<?php  echo $feat_image; ?>" alt="blog" />
+                        </div>
+                        <h3 class="blogSection__item__title">
+                            <?php echo the_title(); ?>
+                        </h3>
+                        <p class="blogSection__item__excerpt">
+                            <?php echo the_excerpt(); ?>
+                        </p>
+                    </a>
+
+                    <?php
+                }
+                wp_reset_postdata();
+            }
+
+            ?>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="contact section">
+        <h2 class="sectionHeader" data-aos="fade-up">
+            Szybka wycena
+        </h2>
+
+        <main class="contact__content">
+            <section class="contact__section">
+                <img class="contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="logo" data-aos="fade-up" />
+
+                <section class="contact__address" data-aos="fade-up">
+
+                    Agencja Happy 13<br/>
+                    Ul. Gazownicza 5/1<br/>
+                    43-300 Bielsko-Biała<br/>
+                    <br/>
+                    Godziny otwarcia:<br/>
+                    Pon-Pt 8:00-16:00<br/>
+                    <br/>
+                    <b>Tel:</b> 516 932 613<br/>
+                    <b>Email:</b> biuro@happy13.com.pl<br/>
+                </section>
+            </section>
+
+            <section class="contact__form" data-aos="fade-up">
+                <h3 class="contact__form__afterSubmit">
+                    Twój formularz został wysłany! Skontaktujemy się z Tobą najszybciej jak to możliwe!
+                </h3>
+                <?php echo do_shortcode('[contact-form-7 id="138" title="Formularz 1"]'); ?>
+            </section>
+        </main>
+
+        <iframe data-aos="fade-up" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d382.6017647738653!2d19.047233673478715!3d49.82690499545902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a11aec1666e7%3A0xce5b706bb97ca3b4!2sAgencja%20reklamowa%20Happy%2013!5e0!3m2!1spl!2spl!4v1627135605007!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
 <?php

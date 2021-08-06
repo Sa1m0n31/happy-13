@@ -140,13 +140,13 @@ add_action( 'widgets_init', 'happy_13_widgets_init' );
  * Enqueue scripts and styles.
  */
 function happy_13_scripts() {
-	wp_enqueue_style( 'happy-13-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'mobile-style', get_stylesheet_directory_uri() . '/mobile.css', array(), _S_VERSION );
+	wp_enqueue_style( 'happy-13-style', get_stylesheet_uri() . "?n=1", array(), _S_VERSION );
+	wp_enqueue_style( 'mobile-style', get_stylesheet_directory_uri() . '/mobile.css?n=1', array(), _S_VERSION );
 
 	wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), 1.0);
 	wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), 1.0, true);
 
-	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js', array('siema-js', 'aos-js'), 1.0, true);
+	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js?n=1', array('siema-js', 'aos-js'), 1.0, true);
 	wp_enqueue_script('siema-js', get_stylesheet_directory_uri() . '/js/siema.js', array(), 1.0, true);
 
 	wp_enqueue_script( 'happy-13-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -184,3 +184,52 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/* Add CATALOG post type */
+function happy_add_catalog_post_type() {
+    $supports = array(
+        'title',
+    );
+
+    $labels = array(
+        'name' => 'Katalogi'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-calendar-alt'
+    );
+
+    register_post_type("catalog", $args);
+}
+
+add_action("init", "happy_add_catalog_post_type");
+
+/* Add TESTIMONIALS post type */
+function happy_add_testimonials_post_type() {
+    $supports = array(
+        'title',
+    );
+
+    $labels = array(
+        'name' => 'Opinie'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-format-quote'
+    );
+
+    register_post_type("testimonials", $args);
+}
+
+add_action("init", "happy_add_testimonials_post_type");

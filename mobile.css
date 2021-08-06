@@ -3,6 +3,12 @@
         padding: 100px 5vw 30px;
     }
 
+    @media (-webkit-device-pixel-ratio: 1.25) {
+        .section {
+            padding: 100px 10vw 30px !important;
+        }
+    }
+
     /* Landing page */
     .landingPage__content {
         left: 5vw;
@@ -64,6 +70,11 @@
     .aboutUs::after {
         width: 340px;
         height: 340px;
+    }
+
+    /* Catalogs */
+    .catalogs__content {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* Header */
@@ -141,6 +152,11 @@
 }
 
 @media(max-width: 900px) {
+    /* Catalogs */
+    .catalogs__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .aboutUs::before {
         width: 300px;
         height: 300px;
@@ -257,9 +273,34 @@
     .contact__content {
         margin-top: 0;
     }
+
+    .pum-container {
+        margin: auto !important;
+    }
+
+    .pum-title {
+        font-size: 17px !important;
+        margin-bottom: 100px !important;
+        font-weight: 700 !important;
+    }
+
+    .pum-title::after {
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        bottom: -140px !important;
+    }
 }
 
 @media(max-width: 700px) {
+    /* Catalogs */
+    .catalogs__content {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogs__item__header {
+        font-size: 17px;
+    }
+
     .sectionHeader {
         font-size: 21px;
     }
@@ -435,6 +476,16 @@
 
 @media(max-width: 500px) {
     /* Offer */
+
+    /* Newsletter */
+    .page__content__header {
+        font-size: 15px;
+    }
+
+    .button--backToHomepage {
+        width: 75vw;
+        font-size: 13px;
+    }
 
 
     /* Testimonials */
