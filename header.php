@@ -30,8 +30,13 @@
 
     <!-- LANDING PAGE -->
     <section class="landingPage">
-        <img class="landingPage__img" onload='
-        console.log("hi!");
+       <aside class="landingPage__carousel__dots">
+           <button class="landingPage__carousel__dots__item dot--active" onclick="changeSlide(0)"></button>
+           <button class="landingPage__carousel__dots__item" onclick="changeSlide(1)"></button>
+           <button class="landingPage__carousel__dots__item" onclick="changeSlide(2)"></button>
+       </aside>
+       <main class="landingPage__carousel">
+           <img class="landingPage__img" onload='
         const beforeLoad = document.querySelector(".beforeLoad");
         const landingPage = document.querySelector(".landingPage");
         const landingPageChildren = document.querySelectorAll(".landingPage *");
@@ -46,6 +51,10 @@
         beforeLoad.style.display = "none";
         }, 1000);
 ' src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
+
+           <img class="landingPage__img2" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
+           <img class="landingPage__img3" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
+       </main>
         <header class="siteHeader">
             <a href="<?php echo get_home_url(); ?>">
                 <img class="siteHeader__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/logo.png'; ?>" alt="happy-13-logo" />

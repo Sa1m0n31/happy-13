@@ -1,3 +1,49 @@
+/* Hero carousel */
+let laningCarousel;
+let landingInterval;
+const landingDots = document.querySelectorAll(".landingPage__carousel__dots__item");
+
+if(document.querySelector(".landingPage__carousel")) {
+    landingCarousel = new Siema({
+        selector: ".landingPage__carousel",
+        perPage: 1,
+        loop: true,
+        onChange: () => {
+            changeSlide(-2);
+        }
+    });
+
+    landingInterval = setInterval(() => {
+        changeSlide(-1)
+    }, 5000);
+}
+
+const removeContentFromLanding = () => {
+    document.querySelector(".landingPage__content").style.display = "none";
+}
+
+const addContentToLanding = () => {
+    document.querySelector(".landingPage__content").style.display = "block";
+}
+
+const changeSlide = (n) => {
+    if(n >= 0) clearInterval(landingInterval);
+
+    if(n >= 0) landingCarousel.goTo(n);
+    else if(n === -1) landingCarousel.next();
+
+    if(landingCarousel.currentSlide !== 0) {
+        removeContentFromLanding();
+    }
+    else {
+        addContentToLanding();
+    }
+    landingDots.forEach((item, index) => {
+        if(index === landingCarousel.currentSlide) item.style.background = "#EC950E";
+        else item.style.background = "#efefef";
+    });
+}
+
 /* Testimonials carousel */
 const testimonialsSelector = document.querySelector(".testimonials__carousel");
 let testimonialsCarousel;

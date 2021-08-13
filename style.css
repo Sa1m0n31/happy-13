@@ -140,13 +140,10 @@ a, button, .button {
 }
 
 .landingPage__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    width: auto;
-    height: 100vh;
-    z-index: -1;
+    /*min-width: 100%;*/
+    /*width: auto;*/
+    /*height: 100vh;*/
+    /*z-index: -1;*/
 }
 
 .siteMenu__list {
@@ -621,7 +618,7 @@ a, button, .button {
 }
 
 .offer__item__header {
-    font-size: 24px;
+    font-size: 32px;
     padding: 20px 0;
     text-transform: uppercase;
     text-align: center;
@@ -642,6 +639,15 @@ a, button, .button {
     text-transform: uppercase;
     font-weight: 900;
     transition: .2s all ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@media(min-width: 900px) {
+    .offer__item:hover .offer__item__btn {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .offer__item__btn:hover {
@@ -1006,6 +1012,7 @@ input[type=checkbox] {
 .catalog__img {
     width: 100%;
     height: auto;
+    transform: scale(1.1);
 }
 
 .catalog__content {
@@ -1323,4 +1330,29 @@ label[for=tnp-email] {
     width: clamp(100px, 80vw, 580px);
     height: auto;
     transition: 5s all ease;
+}
+
+/* Update - add hero carousel */
+.landingPage__carousel {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.landingPage__carousel__dots {
+    position: absolute;
+    top: 50%;
+    right: clamp(5%, calc((100vw - 1600px) / 2), 1000px);
+    width: 8px;
+    z-index: 6;
+}
+
+.landingPage__carousel__dots__item {
+    width: 100%;
+    height: 50px;
+    background: #efefef;
+}
+
+.dot--active {
+    background: #EC950E;
 }
