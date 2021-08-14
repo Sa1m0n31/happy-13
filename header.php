@@ -36,7 +36,19 @@
            <button class="landingPage__carousel__dots__item" onclick="changeSlide(2)"></button>
        </aside>
        <main class="landingPage__carousel">
-           <img class="landingPage__img" onload='
+           <?php
+                $args = array(
+                        'post_type' => 'Baner'
+                );
+                $i = 0;
+                $query = new WP_Query($args);
+
+                if($query->have_posts()) {
+                    while($query->have_posts()) {
+                        $query->the_post();
+                        if($i == 0) {
+                         ?>
+                            <img class="landingPage__img" onload='
         const beforeLoad = document.querySelector(".beforeLoad");
         const landingPage = document.querySelector(".landingPage");
         const landingPageChildren = document.querySelectorAll(".landingPage *");
@@ -50,10 +62,19 @@
         setTimeout(() => {
         beforeLoad.style.display = "none";
         }, 1000);
-' src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
+' src="<?php echo get_field('zdjecie'); ?>" alt="happy-13" />
+           <?php
+                        }
+                        else {
+                            ?>
+                            <img class="landingPage__img2" src="<?php echo get_field('zdjecie'); ?>" alt="happy-13" />
+           <?php
+                        }
+                        $i++;
+                    }
+                }
+           ?>
 
-           <img class="landingPage__img2" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
-           <img class="landingPage__img3" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/happy13.png'; ?>" alt="happy-13" />
        </main>
         <header class="siteHeader">
             <a href="<?php echo get_home_url(); ?>">

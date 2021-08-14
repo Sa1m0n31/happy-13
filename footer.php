@@ -14,10 +14,10 @@
 <!-- FOOTER -->
 <footer class="footer">
     <h5 class="footer__header">
-        © 2021 Agencja Reklamowa Happy 13. Wszelkie prawa zastrzeżone.
+        © Agencja Reklamowa Happy 13. Wszelkie prawa zastrzeżone.
     </h5>
     <h6 class="footer__header">
-        Projekt i wykonanie: skylo.pl
+        Projekt i wykonanie: <a href="https://skylo.pl" rel="noreferrer">skylo.pl</h6>
     </h6>
 </footer>
 </div> <!-- Container end -->

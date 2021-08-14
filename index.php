@@ -17,14 +17,14 @@ get_header();
 
     <main class="landingPage__content">
         <h1 class="landingPage__header">
-            Daj się zauważyć
+            <?php echo get_field('landing_page_-_naglowek_duzy', 1130); ?>
         </h1>
         <h2 class="landingPage__subheader">
-            Na jaką okazję potrzebujesz gadżetów z logo? Zrobimy wszystko!
+            <?php echo get_field('landing_page_-_tekst_pod_naglowkiem_duzym', 1130); ?>
         </h2>
 
-        <a class="button button--landing" href="#contact">
-            Darmowa konsultacja
+        <a class="button button--landing" href="<?php echo get_field('landing_page_-_link_do_buttona', 1130); ?>">
+            <?php echo get_field('landing_page_-_napis_na_buttonie', 1130); ?>
         </a>
     </main>
 
@@ -39,9 +39,9 @@ get_header();
             <h3 class="aboutUs__subheader" data-aos="fade-up">
                 Poznaj Happy13
             </h3>
-            <p class="aboutUs__text" data-aos="fade-up">
-                Agencja reklamowa, działająca na terenie całej polski a także poza jej granicami, Łączymy markę z personalizowanymi materiałami promocyjnymi w zależności od potrzeb. Nieszablonowe podejście i profesjonalizm sprawiają, że z naszej pracowni wychodzą wspaniałe projekty. Stworzymy dla Ciebie całą identyfikację reklamową. U nas załatwisz za jednym mailem: gadżety, banery, odzież firmową, opakowania, taśmy, czy słodycze z logo! Wypuścisz swoją markę odzieżową, lub staniesz się producentem kosmetyków. Dopilnujemy każdej kwestii, od projektu poprzez produkcję, aż po wysyłkę!
-            </p>
+
+            <?php echo get_field('strona_glowna_-_o_nas', 1130); ?>
+
             <a class="button button--aboutUs" data-aos="fade-up" href="<?php echo get_page_link(get_page_by_title('O nas')->ID); ?>">
                 Dowiedz się więcej
             </a>
@@ -55,42 +55,42 @@ get_header();
         </h2>
         <main class="strengths__content">
             <section class="strengths__item" data-aos="zoom-in-up">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-1.svg'; ?>" alt="icon" />
+                <img class="strengths__item__icon" src="<?php echo get_field('co_nas_wyroznia_-_ikonka_1', 1130); ?>" alt="icon" />
                 <h3 class="strengths__item__header">
-                    Indywidualna wycena
+                    <?php echo get_field('co_nas_wyroznia_-_naglowek_1', 1130); ?>
                 </h3>
                 <p class="strengths__item__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    <?php echo get_field('co_nas_wyroznia_-_tekst_1', 1130); ?>
                 </p>
             </section>
 
             <section class="strengths__item" data-aos="zoom-in-up">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-2.svg'; ?>" alt="icon" />
+                <img class="strengths__item__icon" src="<?php echo get_field('co_nas_wyroznia_-_ikonka_2', 1130); ?>" alt="icon" />
                 <h3 class="strengths__item__header">
-                    Indywidualna wycena
+                    <?php echo get_field('co_nas_wyroznia_-_naglowek_2', 1130); ?>
                 </h3>
                 <p class="strengths__item__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    <?php echo get_field('co_nas_wyroznia_-_tekst_2', 1130); ?>
                 </p>
             </section>
 
             <section class="strengths__item" data-aos="zoom-in-up">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-1.svg'; ?>" alt="icon" />
+                <img class="strengths__item__icon" src="<?php echo get_field('co_nas_wyroznia_-_ikonka_3', 1130); ?>" alt="icon" />
                 <h3 class="strengths__item__header">
-                    Indywidualna wycena
+                    <?php echo get_field('co_nas_wyroznia_-_naglowek_3', 1130); ?>
                 </h3>
                 <p class="strengths__item__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    <?php echo get_field('co_nas_wyroznia_-_tekst_3', 1130); ?>
                 </p>
             </section>
 
             <section class="strengths__item" data-aos="zoom-in-up">
-                <img class="strengths__item__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/icon-2.svg'; ?>" alt="icon" />
+                <img class="strengths__item__icon" src="<?php echo get_field('co_nas_wyroznia_-_ikonka_4', 1130); ?>" alt="icon" />
                 <h3 class="strengths__item__header">
-                    Indywidualna wycena
+                    <?php echo get_field('co_nas_wyroznia_-_naglowek_4', 1130); ?>
                 </h3>
                 <p class="strengths__item__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    <?php echo get_field('co_nas_wyroznia_-_tekst_4', 1130); ?>
                 </p>
             </section>
         </main>
@@ -108,10 +108,10 @@ get_header();
                 </h2>
                 <main class="process__item__content">
                     <h3 class="process__header">
-                        Konsultacja
+                        <?php echo get_field('proces_realizacji_-_naglowek_1', 1130); ?>
                     </h3>
                     <p class="process__text">
-                        Opowiedz nam o sobie i swojej branży, w końcu Ty znasz ją najlepiej. Przedstaw nam co chcesz osiągnąć, kogo obdarować lub na jaką okazję potrzebujesz gadżetów. Jeśli nie masz pomysłu, my zaproponujmy odpowiednie dla Twojej branży. Wskaż ilość jaką jesteś zainteresowany (pamiętaj wolumen zamówienia ma znaczenie w wycenie) i skontaktuj się z nami przez formularz na stronie, mailowo lub telefonicznie.
+                        <?php echo get_field('proces_realizacji_-_tekst_1', 1130); ?>
                     </p>
                 </main>
             </section>
@@ -121,10 +121,10 @@ get_header();
                 </h2>
                 <main class="process__item__content" data-aos="fade-up">
                     <h3 class="process__header">
-                        Wycena gadżetów
+                        <?php echo get_field('proces_realizacji_-_naglowek_2', 1130); ?>
                     </h3>
                     <p class="process__text">
-                        Na podstawie zebranych informacji: wybranych produktów, wielkości zamówienia a także sposobu znakowania ( ilości kolorów, zabudowania logo) przygotujemy dla Ciebie wycenę a także wstępną wizualizację na produkcie. Nie sprzedajemy przysłowiowego kota w worku, dlatego dajemy naszym klientom możliwość zobaczenia próbek i wykonania sampli przed rozpoczęciem realizacji.
+                        <?php echo get_field('proces_realizacji_-_tekst_2', 1130); ?>
                     </p>
                 </main>
             </section>
@@ -139,10 +139,10 @@ get_header();
                 </h2>
                 <main class="process__item__content">
                     <h3 class="process__header">
-                        Wycena gadżetów
+                        <?php echo get_field('proces_realizacji_-_naglowek_3', 1130); ?>
                     </h3>
                     <p class="process__text">
-                        Na podstawie zebranych informacji: wybranych produktów, wielkości zamówienia a także sposobu znakowania ( ilości kolorów, zabudowania logo) przygotujemy dla Ciebie wycenę a także wstępną wizualizację na produkcie. Nie sprzedajemy przysłowiowego kota w worku, dlatego dajemy naszym klientom możliwość zobaczenia próbek i wykonania sampli przed rozpoczęciem realizacji.
+                        <?php echo get_field('proces_realizacji_-_tekst_3', 1130); ?>
                     </p>
                 </main>
             </section>
@@ -156,105 +156,34 @@ get_header();
         </h2>
 
         <main class="offer__content">
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
-            <div class="offer__item" data-aos="flip-left">
-                <img class="offer__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/example.png'; ?>" alt="odziez" />
-                <div class="offer__item__content">
-                    <h3 class="offer__item__header">
-                        Odzież
-                    </h3>
-                    <a href="http://skylo-test3.pl/odziez/" class="offer__item__btn">
-                        Zobacz
-                    </a>
-                </div>
-            </div>
+            <?php
+                $args = array(
+                        'post_type' => 'offer'
+                );
+
+                $query = new WP_Query($args);
+
+                if($query->have_posts()) {
+                    while($query->have_posts()) {
+                        $query->the_post();
+                        ?>
+
+                        <div class="offer__item" data-aos="flip-left">
+                            <img class="offer__item__img" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+                            <div class="offer__item__content">
+                                <h3 class="offer__item__header">
+                                    <?php echo the_title(); ?>
+                                </h3>
+                                <a href="<?php echo get_field('link'); ?>" class="offer__item__btn">
+                                    Zobacz
+                                </a>
+                            </div>
+                        </div>
+
+                            <?php
+                    }
+                }
+            ?>
         </main>
     </section>
 
@@ -262,7 +191,7 @@ get_header();
     <section class="section section--catalog">
         <main class="catalog__main">
             <figure class="catalog__imgWrapper" data-aos="fade-left">
-                <img class="catalog__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/katalog.png'; ?>" alt="katalog" />
+                <img class="catalog__img" src="<?php echo get_field('katalog_stockowych_produktow_-_zdjecie', 1130); ?>" alt="katalog" />
             </figure>
 
             <div class="catalog__content" data-aos="fade-right">
@@ -288,10 +217,10 @@ get_header();
             Znakowanie
         </h2>
 
-        <img data-aos="fade-up" class="znakowanie__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/znakowanie.png'; ?>" alt="znakowanie" />
+        <img data-aos="fade-up" class="znakowanie__img" src="<?php echo get_field('znakowanie_-_zdjecie', 1130); ?>" alt="znakowanie" />
 
         <p class="znakowanie__text" data-aos="fade-up">
-            Wybrany przez Państwa gadżet to połowa sukcesu - dopełnieniem jest znakowanie. Gadżety reklamowe to żywa wizytówka firmy. Dbamy o to aby znakowanie na produkcie było estetyczne i perfekcyjne, a same gadżety były spójne z wizerunkiem firmy. Zapoznaj się z technikami znakowania.
+            <?php echo get_field('znakowanie_-_tekst', 1130); ?>
         </p>
 
         <a data-aos="fade-up" class="button button--znakowanie" href="<?php echo get_page_link(get_page_by_title('Znakowanie')->ID); ?>">
@@ -365,7 +294,7 @@ get_header();
             <?php
 
             $args = array(
-                'posts_per_page' => 4
+                'posts_per_page' => 16
             );
 
             $query = new WP_Query($args);

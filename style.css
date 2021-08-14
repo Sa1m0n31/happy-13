@@ -1,3 +1,15 @@
+/*
+Theme Name: Happy 13
+Theme URI: https://skylo.pl
+Author: Skylo.pl
+Author URI: https://skylo.pl
+Description: WordPress theme for Happy13 marketing agency
+Version: 1.0.0
+Requires PHP: 5.4.0
+Requires at least: 4.9.9
+Tested up to: 8.0
+*/
+
 /* Global */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;900&display=swap');
 
@@ -344,7 +356,7 @@ a, button, .button {
     margin: 5px auto;
 }
 
-.aboutUs__text {
+.aboutUs__content p {
     margin: 25px auto;
     max-width: 1200px;
     text-align: center;

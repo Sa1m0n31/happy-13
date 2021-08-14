@@ -184,6 +184,57 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/* Add BANER post type */
+function happy_add_baner_post_type() {
+    $supports = array(
+        'title',
+    );
+
+    $labels = array(
+        'name' => 'Banery'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-welcome-view-site'
+    );
+
+    register_post_type("baner", $args);
+}
+
+add_action("init", "happy_add_baner_post_type");
+
+/* Add OFFER post type */
+function happy_add_offer_post_type() {
+    $supports = array(
+        'title',
+    );
+
+    $labels = array(
+        'name' => 'Oferta'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-media-interactive'
+    );
+
+    register_post_type("offer", $args);
+}
+
+add_action("init", "happy_add_offer_post_type");
+
+
 /* Add CATALOG post type */
 function happy_add_catalog_post_type() {
     $supports = array(
