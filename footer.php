@@ -17,7 +17,7 @@
         © Agencja Reklamowa Happy 13. Wszelkie prawa zastrzeżone.
     </h5>
     <h6 class="footer__header">
-        Projekt i wykonanie: <a href="https://skylo.pl" rel="noreferrer">skylo.pl</h6>
+        Projekt i wykonanie: <a href="https://skylo.pl" rel="noreferrer">skylo.pl</a>
     </h6>
 </footer>
 </div> <!-- Container end -->

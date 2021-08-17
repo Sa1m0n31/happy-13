@@ -107,6 +107,10 @@ const formSubmit = () => {
     }, 500);
 }
 
+document.addEventListener("wpcf7mailsent", () => {
+   formSubmit();
+});
+
 document.addEventListener("wpcf7mailfailed", () => {
     formSubmit();
 });
