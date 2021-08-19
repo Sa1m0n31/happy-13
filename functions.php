@@ -140,13 +140,13 @@ add_action( 'widgets_init', 'happy_13_widgets_init' );
  * Enqueue scripts and styles.
  */
 function happy_13_scripts() {
-	wp_enqueue_style( 'happy-13-style', get_stylesheet_uri() . "?n=2", array(), _S_VERSION );
-	wp_enqueue_style( 'mobile-style', get_stylesheet_directory_uri() . '/mobile.css?n=2', array(), _S_VERSION );
+	wp_enqueue_style( 'happy-13-style', get_stylesheet_uri() . "?n=4", array(), _S_VERSION );
+	wp_enqueue_style( 'mobile-style', get_stylesheet_directory_uri() . '/mobile.css?n=4', array(), _S_VERSION );
 
 	wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), 1.0);
 	wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), 1.0, true);
 
-	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js?n=2', array('siema-js', 'aos-js'), 1.0, true);
+	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js?n=3', array('siema-js', 'aos-js'), 1.0, true);
 	wp_enqueue_script('siema-js', get_stylesheet_directory_uri() . '/js/siema.js', array(), 1.0, true);
 
 	wp_enqueue_script( 'happy-13-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

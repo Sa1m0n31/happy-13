@@ -101,6 +101,9 @@ get_header();
         <h2 class="sectionHeader process__bigHeader" data-aos="fade-up">
             Proces realizacji
         </h2>
+
+        <img class="process__img--mobile" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/proces_zamowienia.png'; ?>" alt="proces-zamowienia" data-aos="fade-up" />
+
         <div class="process__row process__row--first" data-aos="fade-up">
             <section class="process__item">
                 <h2 class="process__number">

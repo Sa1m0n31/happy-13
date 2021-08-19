@@ -539,10 +539,14 @@ a, button, .button {
     margin: 30px 0 0 120px;
 }
 
-.process__img {
+.process__img, .process__img--mobile {
     width: 70%;
     height: auto;
     margin-left: -50px;
+}
+
+.process__img--mobile {
+    display: none;
 }
 
 .process__item--third {
@@ -1008,13 +1012,15 @@ input[type=checkbox] {
 /* Catalog */
 .section--catalog {
     background: #F6F6F6;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .catalog__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px clamp(5vw, calc((100vw - 1300px) / 2), 40vw);
+    padding: 40px clamp(5vw, calc((100vw - 1100px) / 2), 40vw);
 }
 
 .catalog__imgWrapper {
@@ -1334,7 +1340,6 @@ label[for=tnp-email] {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*transition: .4s all ease-in-out;*/
 }
 
 .beforeLoad__logo {
@@ -1349,6 +1354,10 @@ label[for=tnp-email] {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.landingPage__carousel img {
+    min-width: 100vw;
 }
 
 .landingPage__carousel__dots {

@@ -1,5 +1,5 @@
 /* Hero carousel */
-let laningCarousel;
+let landingCarousel;
 let landingInterval;
 const landingDots = document.querySelectorAll(".landingPage__carousel__dots__item");
 

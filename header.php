@@ -59,9 +59,7 @@
         item.style.opacity = "1";
         });
 
-        setTimeout(() => {
         beforeLoad.style.display = "none";
-        }, 1000);
 ' src="<?php echo get_field('zdjecie'); ?>" alt="happy-13" />
            <?php
                         }
